@@ -39,10 +39,12 @@ void	            ft_memdel(void **f);
 /*-------STR-------*/
 
 size_t              ft_strlen (char const *str);
+char                *ft_strdup(const char *s);
 
-/*-----CONVERT-----*/
+/*+++++CONVERT-----*/
 
 int                 ft_atoi(const char *str);
+char                *ft_itoa(int n);
 
 /*+++++++LST-------*/
 

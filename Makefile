@@ -19,6 +19,7 @@ SRC		= ft_toupper.c \
 			ft_putstr.c \
 			ft_putstr_fd.c \
 			ft_atoi.c \
+			ft_itoa.c \
 			ft_lstadd.c \
 			ft_lstdel.c \
 			ft_lstdelone.c \
@@ -30,7 +31,8 @@ SRC		= ft_toupper.c \
 			ft_memcpy.c \
 			ft_memdel.c \
 			ft_memset.c \
-			ft_strlen.c
+			ft_strlen.c \
+			ft_strdup.c
 			
 OBJ		= $(SRC:.c=.o)
 
