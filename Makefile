@@ -12,6 +12,14 @@ SRC		= ft_putchar.c \
 			ft_isascii.c \
 			ft_isdigit.c \
 			ft_isprint.c \
+			ft_iswhitespace.c \
+			ft_atoi.c \
+			ft_strcat.c \
+			ft_strlcat.c \
+			ft_strchr.c \
+			ft_strcpy.c \
+			ft_strdup.c \
+			ft_strncpy.c \
 			ft_memcpy.c \
 			ft_memset.c \
 			ft_bzero.c

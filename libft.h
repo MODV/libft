@@ -11,6 +11,14 @@ void    ft_putchar(char c);
 void    ft_putstr(char* str);
 
 int     ft_strlen(char *str);
+char    *ft_strcat(char *dst, const char *src);
+char    *ft_strchr(const char *str, int c);
+char	*ft_strcpy(char *dst, const char *src);
+char    *ft_strdup(const char *s);
+size_t	ft_strlcat(char *dst, const char *src, size_t n);
+char    *ft_strncpy(char *dst, const char *src, size_t n);
+
+int     ft_atoi(const char *str);
 
 int     ft_islower(int c);
 int     ft_isupper(int c);
@@ -21,5 +29,8 @@ int     ft_isdigit(int c);
 int     ft_isprint(int c);
 int     ft_tolower(int c);
 int     ft_toupper(int c);
+int     ft_iswhitespace(int c);
+
+int     ft_atoi(const char *str);
 
 #endif
