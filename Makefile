@@ -37,6 +37,13 @@ SRC		= ft_toupper.c \
 			ft_memset.c \
 			ft_strlen.c \
 			ft_strdup.c \
+			ft_strclr.c \
+			ft_strdel.c \
+			ft_strcmp.c \
+			ft_strequ.c \
+			ft_strcpy.c \
+			ft_strjoin.c \
+			ft_strncmp.c \
 			ft_strnew.c 
 			
 OBJ		= $(SRC:.c=.o)

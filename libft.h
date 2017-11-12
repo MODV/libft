@@ -45,6 +45,12 @@ void	            ft_memdel(void **f);
 size_t              ft_strlen (char const *str);
 char                *ft_strdup(const char *s);
 void	            *ft_strnew(size_t size);
+char                *ft_strjoin(char const *s1, char const *s2);
+void	            ft_strclr(char *s);
+int                 ft_strcmp(const char *s1, const char *s2);
+void                ft_strdel(char **as);
+int                 ft_strequ(char const *s1, char const *s2);
+int                 ft_strncmp(const char *s1, const char *s2, size_t n);
 
 /*+++++CONVERT-----*/
 
