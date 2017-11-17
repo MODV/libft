@@ -44,6 +44,22 @@ SRC		= ft_toupper.c \
 			ft_strcpy.c \
 			ft_strjoin.c \
 			ft_strncmp.c \
+			ft_striter.c \
+			ft_striteri.c \
+			ft_strmap.c \
+			ft_strmapi.c \
+			ft_strnequ.c \
+			ft_strsplit.c \
+			ft_strsub.c \
+			ft_strtrim.c \
+			ft_strcat.c \
+			ft_strchr.c \
+			ft_strlcat.c \
+			ft_strncat.c \
+			ft_strncpy.c \
+			ft_strnstr.c \
+			ft_strrchr.c \
+			ft_strstr.c \
 			ft_strnew.c 
 			
 OBJ		= $(SRC:.c=.o)
