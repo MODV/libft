@@ -1,7 +1,7 @@
 #include "libft.h"
 
-int     ft_iswhitespace(int c)
+int	ft_iswhitespace(int c)
 {
-    return (c == ' ' || c == '\n' || c == '\t' ||
-                c == '\r' || c == '\v' || c == '\f');
+	return (c == ' ' || c == '\n' || c == '\t' ||
+			c == '\r' || c == '\v' || c == '\f');
 }

@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int     ft_islower(int c)
+int	ft_islower(int c)
 {
-    return (c <= 'z' && c >= 'a');
+	return (c <= 'z' && c >= 'a');
 }

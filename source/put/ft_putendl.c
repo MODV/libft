@@ -2,5 +2,5 @@
 
 void	ft_putendl(char const *str)
 {
-    ft_putendl_fd(str, 1);
+	ft_putendl_fd(str, 1);
 }
