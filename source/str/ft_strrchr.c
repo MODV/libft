@@ -2,7 +2,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char *pos;
+	char	*pos;
 
 	pos = NULL;
 	while (*s != '\0')

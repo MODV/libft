@@ -2,7 +2,7 @@
 
 char	*ft_strcat(char *s1, const char *s2)
 {
-	char *it;
+	char	*it;
 
 	it = s1;
 	while (*it != '\0')
