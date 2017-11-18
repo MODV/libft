@@ -1,6 +1,9 @@
 #include "libft.h"
 
-int	ft_isprint(int c)
+int		ft_isprint(int c)
 {
-	return (c >= 32 && c <= 127);
+	if (c >= ' ' && c <= '~')
+		return (1);
+	else
+		return (0);
 }

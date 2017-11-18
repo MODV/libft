@@ -1,23 +1,14 @@
 #include "libft.h"
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strstr(const char *s1, const char *s2)
 {
-	int	i;
-	int	j;
-
-	i = 0;
-	while (str[i] != '\0')
+	if (!*s2)
+		return ((char*)s1);
+	while (*s1)
 	{
-		j = 0;
-		while (to_find[j] == str[i + j])
-		{
-			if (to_find[j + 1] == '\0')
-			{
-				return (str + i);
-			}
-			j++;
-		}
-		i++;
+		if (ft_strncmp(s1, s2, ft_strlen(s2)) == 0)
+			return ((char *)s1);
+		s1++;
 	}
-	return (0);
+	return (NULL);
 }

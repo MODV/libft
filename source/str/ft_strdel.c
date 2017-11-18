@@ -2,5 +2,8 @@
 
 void	ft_strdel(char **as)
 {
-	ft_memdel((void **)as);
+	if (as == NULL)
+		return ;
+	free(*as);
+	*as = NULL;
 }

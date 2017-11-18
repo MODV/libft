@@ -1,43 +1,39 @@
 #include "libft.h"
 
-int		count_digit(int n)
+void	itoa_isneg(int *n, int *neg)
 {
-	int		len;
-
-	len = (n == 0) ? 1 : 0;
-	while (n != 0)
+	if (*n < 0)
 	{
-		len++;
-		n /= 10;
+		*n *= -1;
+		*neg = 1;
 	}
-	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	int		i;
+	int		tmpn;
 	int		len;
 	int		neg;
-	char	*num;
+	char	*str;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	neg = (n < 0 ? 1 : 0);
-	len = count_digit(n);
-	num = (char *)malloc(sizeof(*num) * (len + 1));
-	if (num)
+	tmpn = n;
+	len = 2;
+	neg = 0;
+	itoa_isneg(&n, &neg);
+	while (tmpn /= 10)
+		len++;
+	len += neg;
+	if ((str = (char*)malloc(sizeof(char) * len)) == NULL)
+		return (NULL);
+	str[--len] = '\0';
+	while (len--)
 	{
-		n = (n < 0) ? -n : n;
-		i = len - 1;
-		while (i >= neg)
-		{
-			num[i] = (n % 10) + '0';
-			n /= 10;
-			i--;
-		}
-		if (neg)
-			num[0] = '-';
-		num[len] = '\0';
+		str[len] = n % 10 + '0';
+		n = n / 10;
 	}
-	return (num);
+	if (neg)
+		str[0] = '-';
+	return (str);
 }
